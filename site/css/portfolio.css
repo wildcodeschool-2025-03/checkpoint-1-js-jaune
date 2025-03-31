@@ -110,6 +110,9 @@ p {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+  @media screen and (max-width: 700px) {
+    width: 80%;
+  }
 }
 
 .purple-text {
@@ -130,5 +133,18 @@ p {
   flex-direction: column-reverse;
   @media screen and (min-width: 700px) {
     flex-direction: row-reverse;
+  }
+}
+
+.disabled {
+  opacity: 50%;
+}
+
+.containerBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
   }
 }

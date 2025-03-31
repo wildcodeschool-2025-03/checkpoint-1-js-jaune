@@ -10,7 +10,7 @@
 
   <body>
     <header>
-      <nav>
+      <nav class="navigation">
         <img src="image/logo.svg" alt="logo-purple" />
         <ul class="menu">
           <li><a href="home.html">Instructions</a></li>
@@ -20,7 +20,11 @@
     </header>
 
     <main>
-      <!-- First banner with title, description, avatar and image desktop -->
+      <section class="banner">
+        <h1>FullStak Developer</h1>
+        <p>I code beautifully simple things, and I love what I do.</p>
+        <img class="avatar1" src="/site/image/avatar.svg" alt="avatar">
+      </section>
       <!-- You can use the avatar image on the folder image -->
       <section>
         <figure class="desktop">
@@ -33,13 +37,13 @@
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          <button id="changeTextBtn">Change ton nom et la couleur</button>
         </section>
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
         
       <article class="skills">
-        <h2 class="skills--title">My Skills</h2>
           <section class="column">
               <img src="image/frontend.svg" alt="" />
               <h3>Back-end Developer</h3>

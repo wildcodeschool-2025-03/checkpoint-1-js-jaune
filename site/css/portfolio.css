@@ -1,13 +1,10 @@
 :root {
   --radius: 12px;
-
   --cardColor: #ffffff;
   --borderColor: #e6ecf8;
   --shadowColor: #e9f0f380;
-
   --styledBorder: var(--borderTemplate) var(--borderColor);
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
-
   --textAlign: center;
 }
 
@@ -21,6 +18,51 @@ h1 {
 
 p {
   padding: 0 var(--gutter);
+}
+
+@media (min-width: 700px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .skills {
+    display: block;
+    flex-direction: column-reverse;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Couleur du bouton */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu {
@@ -92,6 +134,7 @@ p {
   color: var(--lightWildColor);
 }
 
+
 .projects a {
   color: var(--purple);
 }
@@ -107,4 +150,9 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled {
+  pointer-events: none;
+  color: var(--shadowColor);
 }

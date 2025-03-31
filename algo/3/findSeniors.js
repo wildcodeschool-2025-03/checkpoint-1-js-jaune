@@ -5,6 +5,8 @@ lui-même contenant deux sous-tableaux :
 - Le second ne contient que des data analysts seniors
 (Étant donné qu'une personne est senior si elle a 5 ans d'expérience ou plus)
 
+*/
+
 const persons = [
   { name: 'Mary', experience: 2, job: 'web dev' },
   { name: 'Tony', experience: 6, job: 'data analyst' },
@@ -23,10 +25,18 @@ const persons = [
   { name: 'Penelope', experience: 7, job: 'web dev' },
 ];
 
-*/
+function filterByAgeAndJob(persons, minExperience, job) {
+  return persons.filter(person => person.experience >= minExperience && person.job === job);
+}
 
 function findSeniors(persons) {
-  // Your code here !
+
+  const webSeniors = filterByAgeAndJob(persons, 5, "web dev");
+  const dataSeniors = filterByAgeAndJob(persons, 5, "data analyst");
+
+  return { webSeniors, dataSeniors };
 }
+
+
 
 module.exports = findSeniors;

@@ -28,11 +28,15 @@ p {
   margin-bottom: var(--gutter);
 }
 
-.desktop {
-  margin: 0;
-  margin-top: calc(var(--gutter) * 5);
-  margin-bottom: calc(var(--gutter) * -0.3125);
+.titleheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.desktop {display: none;
+}
+
 
 .description {
   color: var(--light);
@@ -55,6 +59,8 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+flex-direction: column-reverse;
 }
 
 .skills--title {
@@ -107,4 +113,33 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media (min-width: 700px){
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+
+
+.menu {
+    display: flex;
+    justify-content: flex-end;}
+
+.desktop {display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: calc(var(--gutter) * 5);
+  margin-bottom: calc(var(--gutter) * -0.3125);
+
+}
+.skills {
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  }
+}
+.column {
+ width: 100%;
+}
 }

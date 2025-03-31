@@ -29,7 +29,7 @@ body {
 }
 
 header nav {
-  display: flex;
+  display: flex;  
   margin: var(--gutter) calc(var(--gutter) * 2);
 }
 
@@ -59,3 +59,11 @@ button:focus {
 #firstname {
   color: red;
 }  
+
+/* Etape 1 modification nav sur ecran + 700px */
+@media screen and (min-width: 700px) {
+  header nav {
+        justify-content: space-between;
+    
+  }
+}

@@ -28,10 +28,22 @@ p {
   margin-bottom: var(--gutter);
 }
 
+/* Etape 2 Modification premiere banniere avec ajout titre + description + avatar */
+.firstbanner {
+  text-align: center;
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+/* Etape 3 Suppression img desktop pour ecran - 700px */
+@media screen and (max-width: 700px) {
+  .desktop {
+    Display : none;
+  }
 }
 
 .description {
@@ -51,10 +63,43 @@ p {
   background-color: var(--lightWildColor);
 }
 
+/* definition bouton "descriptionbutton" */
+.descriptionbutton {
+  background-color: transparent;
+  border-radius: var(--radius);
+  border-color: var(--borderColor);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skilltitle {
+  padding-bottom: 1rem;
+}
+
+/* Etape 5  inverser les bloc de competences sur ecran - 700px*/
+.skillscolumn {
+  Display : flex;
+  flex-direction: column-reverse;
+  
+}
+
+/* Etape 4 Mettre liste competence sur une ligne ecran + 700px */
+@media screen and (min-width: 700px) {
+  
+  .skillscolumn {
+    Display : flex;
+    flex-direction: row-reverse; /* Etape 6  inverser les bloc de competences sur ecran + 700px*/
+    
+  }
 }
 
 .skills--title {
@@ -96,15 +141,41 @@ p {
   color: var(--purple);
 }
 
-.box {
+.box{
   width: 25%;
-  padding: calc(var(--gutter) * 2);
+  
   border: var(--styledBorder);
-  margin: calc(var(--gutter) * 1.25);
+ 
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
 }
 
 .purple-text {
   color: var(--purple);
+}
+
+/* Etape 7 rendre texte opaque */
+.disabled {
+opacity: 0.3;
+}
+
+/* Etape 8 liste des projets sur une ligne ecran + 700px */
+@media screen and (min-width: 700px) {
+  .projects {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+  }
+
+  .boxrang1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+
+  
+  
 }

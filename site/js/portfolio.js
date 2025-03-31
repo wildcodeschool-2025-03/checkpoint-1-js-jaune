@@ -18,8 +18,22 @@ const btnModifyName = document.querySelector("#modify");
 btnModifyName.addEventListener("click", () => {
   const newBgColor = prompt("Enter a color");
   const newFirstname = prompt("Enter your name");
+  const colorLinkHtml = prompt("Enter link HTML color");
   //sectionDescription.style.backgroundColor = newBgColor;
   firstnameSpan.innerHTML = newFirstname;
   //firstnameSpan.style.color = "white";
   root.style.setProperty("--lightWildColor", newBgColor);
+
+  //changer les lin html
+  const allLinkHtml = document.querySelectorAll("a");
+  for (const a of allLinkHtml) {
+    a.style.color = colorLinkHtml;
+  }
 });
+
+///modifier front dev tools
+
+// const btnModifyTools = document.querySelector("#btnModifyTools");
+// btnModifyTools.addEventListener("click",()=>{
+//     const allLi =
+// })

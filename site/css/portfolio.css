@@ -23,6 +23,10 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav {
+  justify-content: space-between;;
+  }
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -33,6 +37,13 @@ p {
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 
 .description {
   color: var(--light);
@@ -55,6 +66,12 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  
 }
 
 .skills--title {
@@ -107,4 +124,73 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+.skills>.column1{
+  display:block;
+  width: 80%;
+  padding:2rem 10rem;
+  order: 1;
+  background-color: white;
+  border: solid 2px grey;
+}
+
+.skills>.column2{
+  display: block;
+  width:80%;
+  padding:2rem 10rem;
+  order: 2;
+  background-color: white;
+  border: solid 2px grey;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;  
+  text-align: center;
+  justify-content: space-between;      
+}
+
+section .box {
+  display: flex;
+  flex-direction: row;                          
+}
+
+.box_align{
+  display: flex;
+  flex-direction: row;
+}
+
+/*petit ecran*/
+
+@media screen and (max-width: 700px) {
+  .desktop> img{
+    display: none;
+  }
+
+  .skills>.column1{
+    display:block;
+    width: 80%;
+    padding:2rem 10rem;
+    order: 1;
+    background-color: white;
+    border: solid 2px grey;
+  }
+
+  .skills>.column2{
+    display: block;
+    width:80%;
+    padding:2rem 10rem;
+    order: 2;
+    background-color: white;
+    border: solid 2px grey;
+  }
+
+  .box_align{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  
+  }
+
 }

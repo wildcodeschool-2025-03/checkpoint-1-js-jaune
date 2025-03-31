@@ -22,7 +22,13 @@
     <main>
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
-      <section>
+      <section class="banner">
+        <div class="banner-content">
+          <h1>My Portfolio</h1>
+          <p><strong>Web Dev</strong></p>
+          <p>Stacks : Learning HTML / CSS / JS / Tailwind CSS / Git and Node JS </p>
+          <img class="avatar" src="image/avatar.svg" alt="profile picture">
+        </div>
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
@@ -32,16 +38,24 @@
       <article>
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
-          <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          <p>
+            <strong>Joiner</strong> with 17 years of experience, transitioning to web development. <br />
+            I'm creative, self-reliant, and bilingual in English. 
+            <br />My background in craftsmanship has equipped me with strong project management skills and expertise in bespoke design. 
+            Passionate about digital technology, I'm eager to expand my technical knowledge and apply my skills to this field. 
+            <br />
+            Pretty driven to succeed in web development, 
+            I also aim to combine my technical and interpersonal abilities to build a fulfilling new career in tech.
+          </p>
+          <button class="changeName changeBgColor">Change Name and Background Color</button>
         </section>
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
         
       <article class="skills">
-        <h2 class="skills--title">My Skills</h2>
-          <section class="column">
-              <img src="image/frontend.svg" alt="" />
+          <section class="column1">
+              <img src="image/frontend.svg" alt="back end picture" />
               <h3>Back-end Developer</h3>
               <p>I like to code things from scratch.</p>
               <h4 class="pink-text">Languages I speak:</h4>
@@ -51,8 +65,8 @@
                 <li>VScode</li>
               </ul>
           </section>
-          <section class="column">
-              <img src="image/frontend.svg" alt="" />
+          <section class="column2">
+              <img src="image/frontend.svg" alt="front end picture" />
               <h3>Front-end Developer</h3>
               <p>I love bringing ideas to life.</p>
               <h4 class="pink-text">Languages I speak:</h4>
@@ -70,6 +84,7 @@
       <article class="projects">
           <h2>My Recent Work</h2>
           <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
+          <div class="box_align">
           <section class="box">
             <img src="https://mattfarley.ca/img/logos/kybercore.svg" alt="logo-entreprise" />
             <p>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</p>
@@ -90,6 +105,7 @@
             <p>A space and member management solution for coworking communities both big and small.</p>
             <a class="disabled" >Shutdown in 2017</a>
           </section>
+        </div>
       </article>      
     </main>
     <footer class="description pink-bg">

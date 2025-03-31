@@ -1,0 +1,61 @@
+/*  YOU DON'T NEED TO TOUCH THIS FILE */
+@import url('https://fonts.googleapis.com/css?family=Dosis:wght@200&family=Roboto:wght@400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gutter: 1rem;
+  --radius: 5px;
+  --borderTemplate: 1px solid;
+
+  --darkColor : #000000;
+  --textColor: #39424e;
+  --wildColor: #f76c6c;
+  --lightWildColor: #ffc0cb;
+  --light: #f5f5f5;
+  --purple: #750ff7;
+  --videoBorderColor: #d4d4d4;
+
+  --styledBorder: var(--borderTemplate) var(--darkColor);
+  --styledVideoBorder: var(var(--borderTemplate)) var(--videoBorderColor);
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  margin: var(--gutter) calc(var(--gutter) * 2);
+}
+
+header nav img {
+  height: calc(var(--gutter) * 3);
+  border-radius: var(--radius);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  padding: var(--gutter);
+  text-decoration: none;
+  color: black;
+}
+
+button:focus {
+  outline: none;
+}
+
+.purple {
+  color: var(--purple);
+}
+
+#firstname {
+  color: red;
+}  

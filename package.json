@@ -1,0 +1,28 @@
+{
+  "name": "js_checkpoint1",
+  "version": "1.0.0",
+  "description": "Your 1st checkpoint !",
+  "main": "index.js",
+  "scripts": {
+    "test:1": "jest algo/1",
+    "test:2": "jest algo/2",
+    "test:3": "jest algo/3",
+    "test:4": "jest algo/4",
+    "test:5": "jest algo/5",
+    "test:6": "jest algo/6",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildCodeSchool/js_checkpoint1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildCodeSchool/js_checkpoint1/issues"
+  },
+  "homepage": "https://github.com/WildCodeSchool/js_checkpoint1#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

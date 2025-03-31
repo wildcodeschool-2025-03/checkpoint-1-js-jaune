@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Checkpoint 1 Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="image/logo-wcs.png" alt="Wild Code School logo">
+        <ul>
+          <li><a href="home.html">Instructions</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Checkpoint Javascript 1</h1>
+
+      <article>
+        <h2>📰 Introduction</h2>
+        <p>You have just joined as a Junior developer a Startup called <strong>JOB4</strong>.</p>
+        <p>Their <strong>goal</strong> is to find the perfect match between their talents and their ambitious startups!</p>
+        <p>
+          <strong>“The war for talent”</strong> is raging. This is where JOB4 comes in by supporting these future unicorns with
+          their <strong>strategic recruitments</strong> in Europe and on a global scale.
+        </p>
+        <p>
+          A true candidate guru, this team of HeadHunters unearths the best Sales, Marketing and Management
+          <strong>opportunities</strong> to offer nuggets the dream adventure.
+        </p>
+        <p><strong>Let's start coding !</strong></p>
+
+        <h2>🎯 Your Mission</h2>
+        <p>
+          <strong>Attached</strong> to Lucas (the UX/UI designer) and <strong>in close collaboration </strong> with Thaïs (the
+          CTO), your missions will be:
+        </p>
+        <ul>
+          <li>
+            ✅ Participate in the <strong>development</strong> of the developer portfolio via
+            <strong>Lucas's and Thaïs's instructions</strong>
+          </li>
+          <li>✅ Use stack <strong>HMTL, CSS and Javascript with DOM manipulation</strong></li>
+          <li>✅ Have fun !</li>
+        </ul>
+
+        <section>
+          <h3>In Example</h3>
+          <p>
+            Here is a <strong>video</strong> of what you should have <strong>at the end</strong> of this checkpoint, If you want
+            to take a look, enjoy!
+          </p>
+          <video controls src="image/video/portfolio.mp4">Avatar change</video>
+        </section>
+      </article>
+
+      <article>
+        <h2>🌺 Start with some CSS (~ 1 hour)</h2>
+        <p>
+          Thaïs would like <strong> a responsive application</strong>, here are his instructions and <strong>go to</strong> the
+          <strong>portfolio</strong> in the navigation bar at the top right
+        </p>
+        <p>
+          Carefully follow the <strong>instructions below </strong> the explanatory <strong>video</strong>. You can also look at
+          the <strong>help section</strong> for more details
+        </p>
+        <p>
+          Do not hesitate to <strong>create</strong> html <strong>containers</strong> and <strong>customize</strong> the given
+          <strong>stylesheet file</strong> "portfolio.css"
+        </p>
+
+        <table>
+          <caption>Tasks list:</caption>
+          <thead>
+            <tr>
+              <td colspan="2"></td>
+              <th scope="col">💪 Tasks</th>
+              <th scope="col">🎥 Video</th>
+              <th scope="colgroup" colspan="2">🆘 Help</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="6" class="basics">Basis steps</th>
+              <th scope="row">
+                <label for="css_step_1">Step 1</label>
+                <input type="checkbox" name="css_step_1" id="css_step_1">
+              </th>
+              <td>
+                <p>There is a problem with the <strong>navigation menu</strong>, all <strong>links</strong> should be at the
+                <strong>top right</strong> (excepted the logo) for screens <strong>greater</strong> than
+                <strong>700px</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/nav-right.mp4">Avatar change</video>
+              </td>
+              <td class="problem">
+                  <p>Problems figuring it out?</p>
+                  <button onclick="handleHelp(0)">A LITTLE BIT HELP</button>
+              </td>
+              <td  class="help">
+                <p>You can use <strong>flexbox</strong> of course with it's parameters like <strong>justify-content</strong></p>
+                <button onclick="handleHelp(0)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_2">Step 2</label>
+                <input type="checkbox" name="css_step_2" id="css_step_2">
+              </th>
+              <td>
+                <p>We need a <strong>title</strong>, a little <strong>description</strong> and an <strong>avatar</strong> for
+                the first banner.</p>
+                <p>The banner must be <strong>centered</strong> in the page for screens <strong>greater</strong> than
+                <strong>700px</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/banner-1.mp4">Banner change</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(1)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>You can <strong>add</strong> html <strong>containers</strong> and <strong>modify</strong> the stylesheet
+                file <strong>portfolio.css</strong> with <strong>flexbox</strong>, with it's parameters like
+                <strong>align-items</strong></p>
+                <button onclick="handleHelp(1)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_3">Step 3</label>
+                <input type="checkbox" name="css_step_3" id="css_step_3">
+              </th>
+              <td>
+                <p>For screens <strong>smaller</strong> than <strong>700px</strong> you can <strong>delete</strong> the image
+                of <strong>desktop</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/desktop.mp4">Desktop delete</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(2)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>You can use <strong>media queries</strong> for screens <strong>smaller</strong> than
+                <strong>700px</strong> and use parameter css display : none</p>
+                <button onclick="handleHelp(2)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_4">Step 4</label>
+                <input type="checkbox" name="css_step_4" id="css_step_4">
+              </th>
+              <td>
+                <p>The <strong>list of skill</strong> must be on the <strong>same line</strong> for screens
+                <strong>greater</strong> than <strong>700px</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/skill-line.mp4">Skill in the same line</video>
+              </td>
+              <td  class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(3)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>You can use <strong>flexbox</strong></p>
+                <button onclick="handleHelp(3)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_5">Step 5</label>
+                <input type="checkbox" name="css_step_5" id="css_step_5">
+              </th>
+              <td>
+                <p>The <strong>front skill</strong> block must be <strong>above</strong> the <strong>back skill</strong> block
+                for screens <strong>less</strong> than <strong>700px</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/skill-responsive.mp4">Skill responsive</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(4)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>You can use <strong>media queries</strong> for screens <strong>less</strong> than <strong>700px</strong> and
+                use <strong>flexbox</strong> with parameter <strong>flex-direction</strong></p>
+                <button onclick="handleHelp(4)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_6">Step 6</label>
+                <input type="checkbox" name="css_step_6" id="css_step_6">
+              </th>
+              <td>
+                <p>When the <strong>list skill</strong> are in the <strong>same line</strong>, the
+                <strong>front skill</strong> block must be in <strong>left</strong> and the
+                <strong>back skill</strong> block in the <strong>right</strong> for screens <strong>greater</strong> than
+                <strong>700px</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/skill-reverse.mp4">Skill reverse</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(5)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>You can use <strong>flexbox</strong> with parameter <strong>flex-direction</strong></p>
+                <button onclick="handleHelp(5)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="2" class="optionnal">
+                Optionnal steps
+              </th>
+              <th scope="row">
+                <label for="css_step_7">Step 7</label>
+                <input type="checkbox" name="css_step_7" id="css_step_7">
+              </th>
+              <td>
+                <p><strong>Bonus</strong>: In the <strong>list of projects</strong> there is 2 projects in development, with no
+                associated website yet.</p>
+                <p>So you can make <strong>opacity</strong> on the text for <strong>all screen</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/opacity.mp4">Skill reverse</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(6)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>Use the <strong>property</strong> of link (<strong>a</strong>) in css like <strong>disabled</strong></p>
+                <button onclick="handleHelp(6)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_8">Step 8</label>
+                <input type="checkbox" name="css_step_8" id="css_step_8">
+              </th>
+              <td>
+                <p><strong>Super Bonus</strong>: The <strong>list of projects</strong> must be on the
+                <strong>same line</strong> for screen sizes <strong>greater</strong> than <strong>700px</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/projects.mp4">Skill reverse</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(7)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>You can use <strong>flexbox</strong> of course with is parameters like
+                <strong>justify-content, align-items, flew-wrap</strong> ...</p>
+                <button onclick="handleHelp(7)">CLOSE</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h2>🌠 Finish with some JS (~ 2 hour)</h2>
+        <p>
+          Lucas would like <strong> more animation</strong> on the page. He had a for each animation you need a button or an
+          event for play the animation
+        </p>
+        <p>here are is instructions</p>
+
+        <table>
+          <caption>Tasks list:</caption>
+          <thead>
+            <tr>
+              <td colspan="2"></td>
+              <th scope="col">💪 Tasks</th>
+              <th scope="col">🎥 Video</th>
+              <th scope="colgroup" colspan="2">🆘 Help</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="4" class="basics">Basis steps</th>
+              <th scope="row">
+                <label for="js_step_1">Step 1</label>
+                <input type="checkbox" name="js_step_1" id="js_step_1">
+              </th>
+              <td>
+                <p>As a user I can <strong>change</strong> the <strong>avatar image</strong> when I <strong>click</strong> on it</p>
+              </td>
+              <td>
+                <video controls src="image/video/avatar.mp4">avatar change</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(8)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>Your goal is to <strong>select</strong> the image of <strong>avatar</strong> and <strong>select</strong> DOM
+                element and <strong>change</strong> the <strong>src</strong> of the image for something else or the image we
+                have in the folder image "image/avatar.svg".</p>
+                <button onclick="handleHelp(8)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_2">Step 2</label>
+                <input type="checkbox" name="js_step_2" id="js_step_2">
+              </th>
+              <td>
+                <p>As a user I can <strong>replace</strong> the text <span id="name">Matt</span> on the paragraphe with
+                <strong>your name</strong> and it's <strong>color</strong> with the color <strong>white</strong></p>
+              </td>
+              <td>
+                <video controls src="image/video/text-back.mp4">text change</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(9)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p><strong>Prompt</strong> is useful in this case.</p>
+                <p><strong>Create</strong> a <strong>button</strong> to open a prompt. The prompt is to ask the user to
+                <strong>type text</strong>.</p> 
+                <p>With this prompt you can <strong>modify</strong> the text <span id="firstname">Matt</span> on the paragraphe with <strong>your name</strong> and <strong>change</strong> it's
+                color in <strong>white</strong>.</p>
+                <button onclick="handleHelp(9)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_3">Step 3</label>
+                <input type="checkbox" name="js_step_3" id="js_step_3">
+              </th>
+              <td>
+                <p>As a user I can <strong>replace</strong> the background color in <strong>pink</strong> by the color:
+                <span class="purple">#750ff7</span> with the same prompt and button.</p>
+              </td>
+              <td>
+                <video controls src="image/video/back.mp4">back change</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(10)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>Prompt is useful in this case.</p> 
+                <p><strong>Create</strong> a <strong>button</strong> to open a prompt.</p> 
+                <p>The prompt is to ask the use to <strong>type the color</strong>.</p> 
+                <p>With this prompt you can <strong>modify</strong> the background color in <strong>pink</strong> and <strong>replace</strong> it with
+                the color you add in prompt <span class="purple">#750ff7</span></p>
+                <button onclick="handleHelp(10)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_4">Step 4</label>
+                <input type="checkbox" name="js_step_4" id="js_step_4">
+              </th>
+              <td>
+                <p>As a user I can <strong>replace</strong> all the elements in <strong>pink</strong> by the color:
+                <span class="purple">#750ff7</span>.</p>
+              </td>
+              <td>
+                <video controls src="image/video/all.mp4">back change</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(11)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>Prompt is useful in this case. <strong>Create</strong> a <strong>button</strong> to open a prompt.</p>
+                <p>The prompt is to ask the use to <strong>type the color</strong>. With this prompt you can
+                <strong>modify</strong> all the elements in <strong>pink</strong> and <strong>replace</strong> it with the
+                color you add in prompt <span class="purple">#750ff7</span></p>
+                <button onclick="handleHelp(11)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="3" class="optionnal">Optionnal steps</th>
+              <th scope="row">
+                <label for="js_step_5">Step 5</label>
+                <input type="checkbox" name="js_step_5" id="js_step_5">
+              </th>
+              <td>
+                <p><strong>Bonus</strong>: As a user I can <strong>change</strong> the <strong>color</strong> of all the html
+                links (<strong>a</strong>) by <span class="purple">#750ff7</span></p>
+              </td>
+              <td>
+                <video controls src="image/video/link.mp4">link change</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(12)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>Try <strong>selecting</strong> all links (<strong>a</strong>) then <strong>create</strong> a for
+                <strong>loop</strong> to <strong>change</strong> color black to <span class="purple">#750ff7</span></p>
+                <button onclick="handleHelp(12)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_6">Step 6</label>
+                <input type="checkbox" name="js_step_6" id="js_step_6">
+              </th>
+              <td>
+                <p><strong>Bonus</strong>: As a user I can <strong>change all li</strong> elements in the
+                <strong>list dev tool front</strong> (ul) with a simple button.</p>
+              </td>
+              <td>
+                <video controls src="image/video/front.mp4">dev tool front change</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(13)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>Try <strong>selecting</strong> the all <strong>li</strong> elements of <strong>list dev tool front</strong>.</p>
+                <p>Then <strong>create</strong> a for <strong>loop</strong> to <strong>replace</strong> li elements with your
+                <strong>list</strong> of dev tool front by creating a list with <strong>3 elements</strong> like VSCode,
+                Github, Terminal.</p>
+                <button onclick="handleHelp(13)">CLOSE</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_7">Step 7</label>
+                <input type="checkbox" name="js_step_7" id="js_step_7">
+              </th>
+              <td>
+                <p><strong>Super Bonus:</strong> As a user I can with a <strong>button</strong> and an <strong>input</strong>,
+                <strong>add</strong> a new <strong>li</strong> element to the <strong>dev tool list back</strong>.</p>
+              </td>
+              <td>
+                <video controls src="image/video/input.mp4">dev tool front change</video>
+              </td>
+              <td class="problem">
+                <p>Problems figuring it out?</p>
+                <button onclick="handleHelp(14)">A LITTLE BIT HELP</button>
+              </td>
+              <td class="help">
+                <p>You have to <strong>create</strong> a <strong>variable</strong> for the <strong>form</strong>, with the
+                <strong>input</strong> and the <strong>dev tool list back</strong> (ul).</p>
+                <p>Add an anonymous <strong>function</strong> to the <strong>form onsubmit </strong> and then
+                <strong>create</strong> a <strong>variable</strong> and use <strong>createElement</strong> for a
+                <strong>new li</strong> element.</p>
+                <p><strong>Inside</strong> this <strong>li</strong> element <strong>add</strong> the <strong>value</strong> of
+                the input (using <strong>innerHTML</strong>).</p> 
+                <p><strong>Add</strong> to the <strong>ul</strong> the element
+                you've created.</p>
+                <button onclick="handleHelp(14)">CLOSE</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
+    <script src="js/home.js"></script>
+  </body>
+</html>

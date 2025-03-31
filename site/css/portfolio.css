@@ -26,12 +26,34 @@ p {
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+
+  @media screen and (min-width: 700px) {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.descAvatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+
 }
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
+
+
+  @media screen and (max-width:700px) {
+    display: none;
+    margin: 12rem;
+
+  }
 }
 
 .description {
@@ -47,6 +69,13 @@ p {
   text-align: var(--textAlign);
 }
 
+#changeButton {
+  border-radius: 10px;
+  border-color: white;
+  font-size: medium;
+  padding: 0.5rem;
+}
+
 .pink-bg {
   background-color: var(--lightWildColor);
 }
@@ -55,12 +84,17 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column-reverse;
+
+  }
 }
 
-.skills--title {
-  margin: calc(var(--gutter) * -2) 0;
-  text-align: var(--textAlign);
-}
+
 
 .column {
   border-left: var(--styledBorder);
@@ -71,6 +105,8 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  flex: 0 0 60%;
+  max-width: 800px;
 }
 
 .column:first-of-type {
@@ -96,6 +132,10 @@ p {
   color: var(--purple);
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -103,6 +143,28 @@ p {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+}
+
+.list-projects {
+  display: block;
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+}
+
+.list-projects .box {
+  width: 100%;
+  margin-bottom: 1rem;
+  margin: 5px;
+
+  @media screen and (min-width: 700px) {
+    width: 23%;
+    margin-bottom: 0;
+  }
 }
 
 .purple-text {

@@ -11,6 +11,10 @@
   --textAlign: center;
 }
 
+section {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -32,8 +36,10 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
-
 .description {
   color: var(--light);
   display: flex;
@@ -63,11 +69,12 @@ p {
 }
 
 .column {
+  width: 100%;
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -107,4 +114,21 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.portrait {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillContainer {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column-reverse;
+  @media screen and (min-width: 700px) {
+    flex-direction: row-reverse;
+  }
 }

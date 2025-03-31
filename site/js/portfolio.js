@@ -4,6 +4,14 @@ const changeName = document.querySelector(".changeMatt");
 const firstname = document.querySelector("#firstname");
 const descriptionBg = document.querySelectorAll(".pink-bg");
 const textColor = document.querySelectorAll(".pink-text");
+const linkColor = document.querySelectorAll("a");
+
+const toolList = document.querySelectorAll("#front-dev-tools li");
+const changeToolButton = document.querySelector(".changeTools");
+
+const toolAdd = document.querySelector("#form");
+const toolText = document.querySelector("#toolText");
+const frontEndList = document.querySelector(".frontEndSkills");
 
 
 // Listeners
@@ -22,6 +30,10 @@ changeName.addEventListener('click', function () {
             bg.style.backgroundColor = bannerColor;
         }
 
+        for (lk of linkColor) {
+            lk.style.color = bannerColor;
+        }
+
         for (txt of textColor) {
             txt.style.color = bannerColor;
         }
@@ -33,4 +45,20 @@ changeName.addEventListener('click', function () {
     }
 })
 
-// Debug
+changeToolButton.addEventListener("click", function () {
+    const myToolList = ["Github", "VSCode", "Tailwind"];
+
+    for (let i = 0; i < toolList.length; i++) {
+        toolList[i].innerHTML = myToolList[i];
+    }
+})
+
+toolAdd.onsubmit = function (event) {
+    event.preventDefault();
+
+    const newText = document.createElement("li");
+    newText.innerHTML = toolText.value;
+    frontEndList.appendChild(newText);
+
+    toolText.value = '';
+}

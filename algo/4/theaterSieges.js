@@ -33,6 +33,4 @@ function theaterSieges() {
   return array;
 }
 
-console.log(theaterSieges());
-
 module.exports = theaterSieges;

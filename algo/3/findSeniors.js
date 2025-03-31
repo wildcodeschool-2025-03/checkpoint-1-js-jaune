@@ -21,15 +21,23 @@ const persons = [
   { name: 'Lisa', experience: 3, job: 'web dev' },
   { name: 'Millie', experience: 5, job: 'data analyst' },
   { name: 'Penelope', experience: 7, job: 'web dev' },
-];
-
-*/
+];*/
 
 function findSeniors(persons) {
   const devWeb = [];
   const dataAnalyst = [];
 
+  for (person of persons) {
+    if (person.experience >= 5 && person.job == "web dev") {
+      devWeb.push(person);
+    }
 
+    else if (person.experience >= 5 && person.job == "data analyst") {
+      dataAnalyst.push(person);
+    }
+  }
+
+  return [devWeb, dataAnalyst];
 }
 
 module.exports = findSeniors;

@@ -33,7 +33,23 @@ btnModifyName.addEventListener("click", () => {
 
 ///modifier front dev tools
 
-// const btnModifyTools = document.querySelector("#btnModifyTools");
-// btnModifyTools.addEventListener("click",()=>{
-//     const allLi =
-// })
+const btnModifyTools = document.querySelector("#btnModifyTools");
+btnModifyTools.addEventListener("click", () => {
+  const parentAllLi = document.querySelector("#front-dev-tools");
+  const allLi = parentAllLi.children;
+  allLi[0].innerHTML = "VSCode";
+  allLi[1].innerHTML = "Github";
+  allLi[2].innerHTML = "Terminal";
+});
+
+//step7
+
+const btnAddTool = document.querySelector("#addBackEndTool");
+btnAddTool.addEventListener("click", () => {
+  const inputTool = document.querySelector("#inputTool");
+  const parentLi = document.querySelector("#BackEndTools");
+
+  const newLi = document.createElement("li");
+  parentLi.appendChild(newLi);
+  newLi.innerText = inputTool.value;
+});

@@ -23,6 +23,17 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleAndLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -32,6 +43,13 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
 
 .description {
@@ -55,6 +73,14 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .skills--title {
@@ -67,10 +93,11 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 100%;
 }
 
 .column:first-of-type {

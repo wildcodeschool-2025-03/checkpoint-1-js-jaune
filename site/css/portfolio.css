@@ -133,7 +133,6 @@ p {
 }
 
 .box {
-	width: 25%;
 	padding: calc(var(--gutter) * 2);
 	border: var(--styledBorder);
 	margin: calc(var(--gutter) * 1.25);

@@ -121,6 +121,13 @@ p {
 	color: var(--purple);
 }
 
+@media screen and (min-width: 700px) {
+	.projectlist {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
 .disabled {
 	opacity: 0.5;
 }

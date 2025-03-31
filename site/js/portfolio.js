@@ -11,8 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
 		const color = prompt("Enter a color");
 
 		if (color) {
-			const background = document.querySelector(".description");
-			background.style.background = color;
+			const newBgColor = document.querySelectorAll(".pink-bg");
+
+			for (let element of newBgColor) {
+				element.style.backgroundColor = color;
+			}
+
+			const newTextColor = document.querySelectorAll(".pink-text");
+
+			for (let element of newTextColor) {
+				element.style.color = color;
+			}
 		}
 	}
 

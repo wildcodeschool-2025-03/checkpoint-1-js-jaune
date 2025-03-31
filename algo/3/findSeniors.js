@@ -26,7 +26,10 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  // Your code here !
+  const devWeb = [];
+  const dataAnalyst = [];
+
+
 }
 
 module.exports = findSeniors;

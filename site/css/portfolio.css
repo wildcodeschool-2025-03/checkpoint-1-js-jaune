@@ -32,6 +32,10 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
 
 .description {
@@ -107,4 +111,55 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+/* CUSTOM --------------------------- */
+
+.header {
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.banner {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.columns {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.projectList {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.projects {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

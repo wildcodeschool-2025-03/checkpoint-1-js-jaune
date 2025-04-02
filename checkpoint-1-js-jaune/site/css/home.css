@@ -1,0 +1,120 @@
+body {
+  font-family: "Roboto";
+  color: var(--textColor);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+
+main {
+  padding: calc(var(--gutter) * 3);
+}
+
+h1 {
+  text-align: center;
+}
+
+article:first-of-type h2:last-of-type,
+article:not(:first-of-type) {
+  padding-top: var(--gutter);
+  border-top: var(--styledBorder);
+}
+
+article:not(:first-of-type) {
+  overflow: scroll;
+}
+
+section {
+  background-color: var(--light);
+  width: min(100%, 30rem);
+  margin: var(--gutter) auto;
+  border: var(--styledBorder);
+  border-radius: var(--radius);
+  padding: var(--gutter);
+}
+
+video {
+  display: block;
+  background-color: var(--light);
+  border: var(--styledVideoBorder);
+  border-radius: var(--radius);
+  transition: background-color 0.2s linear;
+  padding: var(--gutter);
+  margin: var(--gutter) auto;
+  width: min(100%, calc(var(--gutter) * 19)); 
+  aspect-ratio: auto;
+}
+
+table {
+  table-layout: auto;
+  width: 100%;
+  margin-top: calc(var(--gutter) * 2);
+  border-spacing: calc(var(--gutter) / 2) var(--gutter);
+  overflow: auto;
+}
+
+caption {
+  text-align: start;
+  font-size: calc(var(--gutter) * 1.5);
+  font-weight: bold;
+}
+
+tr,
+th {
+  background-color: var(--light);
+}
+
+th, 
+td {
+  border-radius: var(--radius);
+  z-index: 1;
+}
+
+tbody th {
+  width: 5rem;
+  min-width: 5rem;
+  position: sticky;
+  left: 0;
+}
+
+td {
+  width: 30%;
+  min-width: 10rem;
+  padding: var(--gutter);
+}
+
+button {
+  display: block;
+  margin: var(--gutter) auto;
+  color: var(--light);
+  padding: var(--gutter);
+  border-radius: calc(var(--radius) * 2);
+  background-color: var(--wildColor);
+  border: none;
+  cursor: pointer;
+}
+
+.basics {
+  background-color: var(--lightWildColor);
+}
+
+.optionnal {
+  background-color: var(--purple);
+  color: var(--light);
+}
+
+.help {
+  display: none;
+}
+
+.help-visible {
+  display: table-cell;
+}
+
+.problem-no-visible {
+  display: none;
+}
